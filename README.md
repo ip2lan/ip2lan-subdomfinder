@@ -132,10 +132,10 @@ echo 'export PATH="$PATH:$HOME/go/bin"' >> ~/.bashrc && source ~/.bashrc
 
 ```bash
 # Exemple
-./ip2lan-subdomfinder.sh tesla.com
+./ip2lan-subdomfinder.sh tototata.com
 
 # Avec une wordlist custom
-./ip2lan-subdomfinder.sh tesla.com /usr/share/seclists/Discovery/DNS/subdomains-top1million-20000.txt
+./ip2lan-subdomfinder.sh tototata.com /usr/share/seclists/Discovery/DNS/subdomains-top1million-20000.txt
 ```
 
 ### Lancer un module seul
@@ -144,16 +144,16 @@ Chaque module est indépendant et peut être relancé sans reprendre tout le pip
 
 ```bash
 # Relancer uniquement httprobe
-bash modules/mod_httprobe.sh output/tesla.com/recon/resolved.txt \
-  output/tesla.com/recon/httprobe/alive.txt
+bash modules/mod_httprobe.sh output/tototata.com/recon/resolved.txt \
+  output/tototata.com/recon/httprobe/alive.txt
 
 # Relancer uniquement les screenshots
-bash modules/mod_gowitness.sh output/tesla.com/recon/httprobe/alive.txt \
-  output/tesla.com/recon
+bash modules/mod_gowitness.sh output/tototata.com/recon/httprobe/alive.txt \
+  output/tototata.com/recon
 
 # Relancer la détection de takeover
-bash modules/mod_subjack.sh output/tesla.com/recon/httprobe/alive.txt \
-  output/tesla.com/recon
+bash modules/mod_subjack.sh output/tototata.com/recon/httprobe/alive.txt \
+  output/tototata.com/recon
 ```
 
 ---
@@ -161,7 +161,7 @@ bash modules/mod_subjack.sh output/tesla.com/recon/httprobe/alive.txt \
 ## Résultats
 
 ```
-output/tesla.com/
+output/tototata.com/
 ├── report_20250501_143022.txt        ← rapport consolidé horodaté
 └── recon/
     ├── final.txt                     ← tous les sous-domaines bruts
